@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+	font-size: 62.5%;
+}
+
+.nav-bar {
+	display: flex;
+	gap: 2.4rem;
+	align-items: center;
+	justify-content: center;
+	background-color: #a1d998;
+	padding: 2.4rem 3.6rem;
+}
+
+.nav-bar input {
+	border: none;
+	border-radius: 1.2rem;
+	padding: 1.2rem 1.6rem;
+	font-size: 1.8rem;
+	width: 40rem;
+}
+
+.search-button {
+	border: none;
+	border-radius: 1.2rem;
+	padding: 1.2rem 1.6rem;
+	font-size: 1.8rem;
+	background-color: #e5f5e0;
+	transition: all 0.3s;
+}
+
+.search-button:hover {
+	background-color: #f7fcf5;
+}
+
+.search-button:active {
+	transform: translateY(2px);
+}
+
+.main {
+	margin-top: 2.4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.box {
+	width: 40%;
+	background-color: #a1d998;
+	padding: 1.2rem 2.4rem;
+}
+
+.cur-weather {
+	width: 50%;
+	margin-left: 25%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+
+.cur-weather img {
+	width: 9.8rem;
+	height: 9.8rem;
+}
+
+.cur-weather--location {
+	font-size: 2.4rem;
+	margin-bottom: 1.2rem;
+}
+
+.cur-weather--temp {
+	font-size: 2.4rem;
+	margin-bottom: 1.2rem;
+}
+
+.cur-weather--condition {
+	font-size: 1.8rem;
 }
