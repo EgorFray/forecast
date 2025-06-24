@@ -1,3 +1,4 @@
+import { queryByRole } from "@testing-library/dom";
 import { useEffect, useState } from "react";
 
 const key = "1fd51841a8d24db6936171053252106";
@@ -135,15 +136,17 @@ export default function App() {
 		<>
 			<NavBar query={query} setQuery={setQuery} />
 
-			<Main>
-				{!error && (
-					<Box>
-						<WeatherNow weather={weatherNow} />
-						<WeatherToday weatherToday={weatherToday} />
-					</Box>
-				)}
-				{error && <ErrorMessage message={error} />}
-			</Main>
+			{query.length < 3 ? null : (
+				<Main>
+					{!error && (
+						<Box>
+							<WeatherNow weather={weatherNow} />
+							<WeatherToday weatherToday={weatherToday} />
+						</Box>
+					)}
+					{error && <ErrorMessage message={error} />}
+				</Main>
+			)}
 		</>
 	);
 }
