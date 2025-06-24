@@ -49,7 +49,8 @@ html {
 
 .box {
 	width: 40%;
-	background-color: #a1d998;
+	background-color: #f7fcf5;
+	border-radius: 1.2rem;
 	padding: 1.2rem 2.4rem;
 }
 
@@ -79,4 +80,8 @@ html {
 
 .cur-weather--condition {
 	font-size: 1.8rem;
+}
+
+.error {
+	font-size: 3.2rem;
 }
