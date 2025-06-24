@@ -24,23 +24,6 @@ html {
 	width: 40rem;
 }
 
-.search-button {
-	border: none;
-	border-radius: 1.2rem;
-	padding: 1.2rem 1.6rem;
-	font-size: 1.8rem;
-	background-color: #e5f5e0;
-	transition: all 0.3s;
-}
-
-.search-button:hover {
-	background-color: #f7fcf5;
-}
-
-.search-button:active {
-	transform: translateY(2px);
-}
-
 .main {
 	margin-top: 2.4rem;
 	display: flex;
@@ -50,6 +33,7 @@ html {
 .box {
 	width: 40%;
 	background-color: #f7fcf5;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 1.2rem;
 	padding: 1.2rem 2.4rem;
 }
@@ -57,6 +41,7 @@ html {
 .cur-weather {
 	width: 50%;
 	margin-left: 25%;
+	margin-bottom: 1.2rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-items: center;
@@ -80,6 +65,33 @@ html {
 
 .cur-weather--condition {
 	font-size: 1.8rem;
+}
+
+.today-weather {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2.4rem;
+}
+
+.today-weather--info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.today-weather--info img {
+	margin-bottom: 1.2rem;
+}
+
+.today-weather--indo span {
+	margin-left: 1.2rem;
+}
+
+.today-weather--time,
+.today-weather--temp,
+.today-weather--condition {
+	font-size: 1.6rem;
+	margin-bottom: 1.2rem;
 }
 
 .error {
